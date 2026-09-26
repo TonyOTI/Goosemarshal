@@ -1,0 +1,189 @@
+
+@font-face {
+    font-family: Pacifico;
+    src: url(Pacifico-Font/Pacifico-Regular.ttf);
+}
+
+body {
+    background-color: #f7ecd1;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+  }
+
+h2 {
+    color: #5c5c5c;
+}
+
+h3 {
+    color: #5c5c5c;
+    font-family: Pacifico, Georgia;
+}
+
+th {
+    height: 80px;
+}
+
+td {
+    height: 80px;
+}
+
+.button-div {
+    align-self: center;
+}
+
+.container {
+    margin-top: 1rem;
+    margin-bottom: 30px;
+    width: 200px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 10px;
+}
+
+.form-control-range {
+    margin-bottom: 0.75rem;
+}
+
+.goose-img {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    width: 300px;
+    flex: 1;
+    border-radius: 300px;
+    margin: auto;
+}
+
+.goose-letter {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Pacifico, Georgia;
+    color:orangered;
+    margin: 3.5px;
+}
+
+.grizzly {
+    color: brown;
+    --bs-btn-active-bg: brown;
+    --bs-btn-active-border-color: brown;
+    --bs-btn-active-color: white;
+}
+
+.grizzly:hover {
+    background-color: brown;
+    border-color: brown;
+    color: white;
+}
+
+.hof-button {
+    border-style: solid;
+    border-color: black;
+}
+
+.honk-button {
+    background-color: #ffc107;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    margin-top: 10px;
+    padding: 17px 38px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.honk-button:hover {
+    background-color: orangered;
+    border-color: orangered;
+    color: white;
+}
+
+.honk-hall {
+    align-self: center;
+    width: 280px;
+}
+
+.page-body {
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+    flex-wrap: wrap;
+    max-width: 950px;
+    margin:auto;
+}
+
+.page-title {
+    color: #5c5c5c;
+    font-family: Pacifico, Georgia;
+    margin-top: 10px;
+}
+
+.popup {
+    font-size: 60pt;
+    font-weight: bold;
+    /*word-wrap: break-word;*/
+    text-align: center;
+}
+
+.popup-text {
+    margin-left: -900px;
+    margin-right: -900px;
+    margin-bottom: -900px;
+    margin-top: -900px;
+    white-space: nowrap;
+    width: 100vh;
+}
+
+.sliders {
+    padding: 0;
+    margin-top: 0;
+    flex: 1;
+}
+
+.text {
+    margin: auto;
+}
+
+/* Adjust styles for smaller devices */
+@media only screen and (max-width: 800px) {
+    td {
+        height: 40px;
+    }
+    th {
+        height: 40px;
+    }
+    .goose-img {
+        width: 200px;
+    }
+    .popup {
+        font-size: 23pt;
+    }
+    .text {
+        margin: 10px;
+    }
+}
+
+/* Adjust styles for mobile devices */
+@media only screen and (max-width: 575px) {
+    .img-slider-container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .honk-button {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
+
+/* Adjust styles for larger devices */
+@media only screen and (min-width: 801px) {
+    .popup {
+        padding-top: 240px;
+    }
+    .text {
+        width: 55%;
+    }
+}
