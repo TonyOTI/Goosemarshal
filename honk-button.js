@@ -62,11 +62,6 @@ honkButton.addEventListener("click", async () =>
 // Take value of the slider and convert it from a logarithmic dB scale to a linear scale
 volumeSlider.addEventListener('input', () =>
 {
-    /*const sliderValue = parseFloat(volumeSlider.value);
-    const linearValue = (0 - sliderValue) / (0 - -60);
-    const logarithmicValue = Math.pow(10, linearValue * 2 - 2);
-    const volumeValue = logarithmicValue * (-100);
-    vol.volume.value = volumeValue; */
     const position = (Number(volumeSlider.value) + 60) / 60;
     const amplitude = Math.max(position, 0.001);
     vol.volume.value = 20 * Math.log10(amplitude);
